@@ -1,18 +1,18 @@
-import { Route, Routes, Switch } from 'react-router-dom';
+import { Route, Routes, Router } from 'react-router-dom';
 import AppBar from './AppBar/AppBar';
 import HomePage from './views/HomePage';
 import MoviesPage from './views/MoviesPage';
+import ErrorPage from './views/ErrorPage';
 
-function App() {
+export function App() {
   return (
     <>
       <AppBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/movies" element={<MoviesPage />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </>
   );
 }
-
-export default App;

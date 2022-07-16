@@ -14,7 +14,7 @@ function Navigation() {
       <NavLink
         end
         to="/"
-        className={s.margin}
+        className={s.active}
         // style={isActive => ({
         //   color: isActive ? 'blue' : 'green',
         // })}
@@ -25,7 +25,7 @@ function Navigation() {
       <NavLink
         end
         to="/movies"
-        className={s.margin}
+        className={s.active}
         // className={({ isActive }) => (isActive ? activeClassName : undefined)}
         // style={isActive => ({
         //   color: isActive ? 'blue' : 'green',
